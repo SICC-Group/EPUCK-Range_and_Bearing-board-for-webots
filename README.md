@@ -11,21 +11,21 @@ config.py:参数设置文件
 - [Linux](https://cyberbotics.com/doc/guide/installation-procedure#installation-on-linux)
 
 2.建立虚拟环境：
-'''
+```
 conda create -n webots python=3.8
-'''
+```
 
 3.安装deepbots:
-'''
+```
 pip install deepbots
-'''
+```
 
 4.配置文件：
 在epuck_controller和supervisor_controller文件夹下，找到runtime.ini文件：
-'''shell
+```
 [python]
 COMMAND = <自己安装路径>/miniconda3/envs/webots/bin/python
-'''
+```
 
 # 执行
 1.打开webots载入worlds.wbt
@@ -33,7 +33,7 @@ COMMAND = <自己安装路径>/miniconda3/envs/webots/bin/python
 2.执行simulation
 
 3.运行supervisor_controller.py文件
-'''
+```
 python supervisor_controller.py
-'''
+```
 
